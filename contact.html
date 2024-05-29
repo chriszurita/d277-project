@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Washington State</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        
+            function validateEmails() {
+                var email = document.getElementById("email").value;
+                var confirmEmail = document.getElementById("confirmEmail").value;
+    
+                if (email !== confirmEmail) {
+                    alert("Email addresses do not match. Please enter matching email addresses.");
+                } else {
+                    alert("Validation successful. Submit functionality not implemented in this example.");
+                }
+            }
+
+        </script> 
+    </script>
+    <style>
+       
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #45b65a;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #45b65a
+        }
+
+        th {
+            background-color: #f2f2f2; 
+        }
+
+        label {
+            display: block; 
+            font-weight: bold; 
+        }
+
+        input, textarea {
+            width: 100%; 
+            padding: 8px;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 5px 20px;
+            padding-bottom: 1%;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        h3{
+            
+            font-size: 30px;
+           
+        }
+
+        aside{
+            display: flex;
+            justify-content: center;
+            padding-top: 15%;
+            max-width:  10%;
+            
+        }
+
+ .section{
+
+    padding-bottom: 15%;
+     
+    }
+
+ </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>WASHINGTON STATE</h1>
+            <a href="index.html">Home</a>
+            <a href="capital.html">Capital</a>
+            <a href="Seattle.html">Seattle</a>
+            <a href="Bellevue.html">Bellevue</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://parks.wa.gov/" target="_blank">Parks</a>
+        </nav>
+    </header>
+
+    <aside>
+        <img id="envelop" src="images/envelop.jpg" alt="envelop image">
+    </aside>
+
+    <section class="section">
+        <h3>Contact Us :</h3>
+        <br><br>
+        <table>
+            <tr>
+                <td><label for="FirstName">First Name:</label></td>
+                <td><input type="text" id="FirstName"></td>
+            </tr>
+            <tr>
+                <td><label for="LastName">Last Name:</label></td>
+                <td><input type="text" id="LastName"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email Address:</label></td>
+                <td><input type="email" name="email" id="email" placeholder="Enter your email address" required></td>
+            </tr>
+            <tr>
+                <td><label for="confirmEmail">Confirm Email Address:</label></td>
+                <td><input type="email" name="confirmEmail" id="confirmEmail" placeholder="Confirm your email address"></td>
+            </tr>
+            <tr>
+                <td><label for="question">Ask a Question:</label></td>
+                <td><textarea name="question" id="question" rows="4"></textarea></td>
+            </tr>
+        </table>
+        <button type="button" onclick="validateEmails()">Submit</button>
+
+    </section>
+
+    <footer>
+
+        <h4>Website made by Chris Zurita. This is a project for WGU D277.</h4>
+
+    </footer>
+    
+  
+</body>
+</html>
